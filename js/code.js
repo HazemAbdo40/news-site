@@ -1,7 +1,7 @@
 
 var data = [];
-var apiKey = '...';
-var country = 'eg'
+var apiKey = '...'; //to assign your api key
+var country = 'eg'; //to assign your country that you need to start
 
 var http = new XMLHttpRequest;
 function getData(myCategory) {
@@ -21,15 +21,15 @@ function displayData() {
       result += `
       
          <div class="col-md-4 col-sm-6 p-2 cont mt-5">
-         <div class=''>
+         <div class='content'>
          <a class='m-auto' href="${data[i].url}">
             <img class='w-100' src="${data[i].urlToImage}">
-            </a>
+            
             <h4>${data[i].title}</h4>
             <br />
             <h6>Date : ${data[i].publishedAt}</h6>
             <br />
-            <p>${data[i].description}</p>
+            <p>${data[i].description}</p></a>
             <br />
             <a class='btn btn-info w-50 m-auto readMore' href="${data[i].url}">Read More</a>
             </div>
@@ -45,6 +45,8 @@ $('.nav-link').click(function () {
 $('.navbar-brand').click(function(){
    let path = 'general';
    getData(path);
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
 })
 $('.nav-item').click(function () {
 
@@ -69,4 +71,46 @@ $(document).ready(function(){
    $('#loading').fadeOut(2000 , function(){
       $('body').css('overflow' , 'auto');
    });
-})
+});
+$('.eg').click(function(){
+   country = 'eg';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.us').click(function(){
+   country = 'us';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.fr').click(function(){
+   country = 'fr';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.ng').click(function(){
+   country = 'ng';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.gr').click(function(){
+   country = 'gr';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.it').click(function(){
+   country = 'it';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});
+$('.si').click(function(){
+   country = 'si';
+   getData('general');
+   $('.gnr').siblings().removeClass('bdr');
+   $('.gnr').addClass('bdr');
+});

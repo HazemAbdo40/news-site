@@ -9,7 +9,14 @@
   background-color: rgb(12, 9, 22) !important;
   border-bottom: 1px solid rgba(185, 185, 185, 0.493);
 }
-
+.cont .content a
+{
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+.cont .content a:hover{
+  text-decoration: none;
+}
 .cont
 {
     border-bottom: 1px solid rgb(185, 185, 185);
@@ -18,7 +25,7 @@
     
 }
 .cont:hover{
-    box-shadow: #aaa 1px 1px 10px;
+    box-shadow: #aaa 1px 1px 5px;
 }
 .nav-item a
 {

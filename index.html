@@ -35,11 +35,14 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav m-auto mt-2 mt-lg-0">
-                <li class="nav-item bdr">
+                <li class="nav-item bdr gnr">
                     <a class="nav-link" href="#">general</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">health</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">business</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">science</a>
@@ -52,6 +55,22 @@
                 </li>
             </ul>
         </div>
+        <div class="btn-group mr-5" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Country
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <button class="dropdown-item eg">Egypt</button>
+                <button class="dropdown-item ng">England</button>
+                <button class="dropdown-item fr">Frensh</button>
+                <button class="dropdown-item gr">Germany</button>
+                <button class="dropdown-item it">Italy</button>
+                <button class="dropdown-item si">Spian</button>
+                <button class="dropdown-item us">United State</button>
+              </div>
+            </div>
+          </div>
     </nav>
 
     <section class="py-5">
@@ -71,6 +90,7 @@
             by Hazem Abdo 2020
         </p>
     </div>
+
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
